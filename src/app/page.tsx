@@ -1,8 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, Eye, Layers, LineChart, Network, ShieldCheck, Zap } from "lucide-react";
+import { ArrowRight, Eye, Layers, LineChart, Network } from "lucide-react";
 
 const proofMarks = ["TokenTap", "AoE2WAR", "Traffic", "VPSSentry", "TMail", "Pulse"];
 
@@ -32,23 +31,19 @@ const cards = [
 export default function Home() {
   return (
     <main className="min-h-screen overflow-hidden bg-black text-white">
-      <section className="relative min-h-[790px] overflow-hidden border-b border-white/10 lg:min-h-[920px]">
+      <section className="relative min-h-[820px] overflow-hidden border-b border-white/10 lg:min-h-[940px] xl:min-h-[980px]">
         <div className="absolute inset-0">
-          <Image
-            src="/ascend-pyramid-hero.png"
-            alt="Black pyramid lit by a white vertical signal beam on a dark brick floor"
-            fill
-            priority
-            sizes="100vw"
-            className="hero-pyramid-image"
+          <div
+            className="absolute inset-0 hero-pyramid-scene"
+            aria-label="Black pyramid lit by a white vertical signal beam on a dark brick floor"
           />
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,#020202_0%,rgba(2,2,2,0.96)_21%,rgba(2,2,2,0.62)_47%,rgba(2,2,2,0.16)_73%,rgba(2,2,2,0.72)_100%)]" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_32%,rgba(214,192,140,0.20),transparent_31%),radial-gradient(circle_at_26%_18%,rgba(255,255,255,0.07),transparent_20%)]" />
-          <div className="absolute inset-x-0 bottom-0 h-72 bg-gradient-to-t from-black via-black/72 to-transparent" />
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,#020202_0%,rgba(2,2,2,0.98)_25%,rgba(2,2,2,0.82)_42%,rgba(2,2,2,0.22)_63%,rgba(2,2,2,0.28)_78%,rgba(2,2,2,0.72)_100%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_74%_34%,rgba(214,192,140,0.18),transparent_29%),radial-gradient(circle_at_22%_18%,rgba(255,255,255,0.065),transparent_20%)]" />
+          <div className="absolute inset-x-0 bottom-0 h-80 bg-gradient-to-t from-black via-black/66 to-transparent" />
         </div>
 
-        <header className="relative z-20 mx-auto flex max-w-[1800px] items-center justify-between px-8 py-8 sm:px-12 lg:px-16">
-          <a href="#" className="text-2xl font-semibold tracking-[0.28em] sm:text-3xl">
+        <header className="relative z-20 flex items-center justify-between px-[clamp(2rem,4.8vw,5.75rem)] py-8 lg:py-9">
+          <a href="#" className="text-2xl font-semibold tracking-[0.29em] sm:text-3xl">
             ASCEND <span className="text-neutral-400">AI</span>
           </a>
 
@@ -67,14 +62,14 @@ export default function Home() {
           </a>
         </header>
 
-        <div className="relative z-10 mx-auto max-w-[1800px] px-8 pt-24 sm:px-12 sm:pt-32 lg:px-16 lg:pt-44">
+        <div className="relative z-10 px-[clamp(2rem,4.8vw,5.75rem)] pt-28 sm:pt-32 lg:pt-44 xl:pt-48">
           <motion.div
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.75, ease: "easeOut" }}
-            className="max-w-[760px]"
+            className="max-w-[735px]"
           >
-            <h1 className="text-[4rem] font-bold leading-[0.94] tracking-[-0.065em] sm:text-[5.9rem] lg:text-[6.6rem] xl:text-[7.4rem]">
+            <h1 className="text-[4.05rem] font-bold leading-[0.93] tracking-[-0.066em] sm:text-[5.9rem] lg:text-[6.8rem] xl:text-[7.45rem] 2xl:text-[7.9rem]">
               OPERATIONAL
               <br />
               INTELLIGENCE
@@ -84,14 +79,15 @@ export default function Home() {
               <span className="text-[#b8aa92]">BUSINESS.</span>
             </h1>
 
-            <p className="mt-10 max-w-[600px] text-xl leading-9 text-neutral-200 sm:text-2xl">
+            <p className="mt-9 max-w-[575px] text-lg leading-8 text-neutral-200 sm:text-xl sm:leading-9">
               Ascend AI builds systems that tighten operations, automate repetitive work, and surface hidden leverage inside your business.
             </p>
 
-            <div className="mt-12 flex flex-col gap-5 sm:flex-row">
+            <div className="mt-11 flex flex-col gap-5 sm:flex-row">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center gap-6 rounded bg-white px-8 py-5 text-base font-semibold tracking-[0.08em] text-black transition hover:bg-[#d6c08c]"
+                className="inline-flex items-center justify-center gap-6 rounded bg-white px-8 py-5 text-base font-extrabold tracking-[0.08em] !text-[#050505] shadow-[0_0_34px_rgba(255,255,255,0.12)] transition hover:bg-[#d6c08c]"
+                style={{ color: "#050505" }}
               >
                 BOOK A CALL <ArrowRight size={22} />
               </a>
@@ -105,17 +101,20 @@ export default function Home() {
           </motion.div>
         </div>
 
-        <div className="relative z-10 mx-auto mt-24 max-w-[1620px] px-8 pb-12 sm:px-12 lg:mt-28 lg:px-16">
-          <p className="mb-8 text-center text-xs font-semibold tracking-[0.38em] text-[#b8aa92]/80">
+        <div className="relative z-10 mt-24 px-[clamp(2rem,4.8vw,5.75rem)] pb-12 lg:mt-28">
+          <p className="mb-7 text-center text-xs font-semibold tracking-[0.38em] text-[#b8aa92]/80">
             BUILT BY OPERATORS
           </p>
-          <div className="grid grid-cols-2 gap-7 text-center md:grid-cols-6">
+          <div className="mx-auto grid max-w-[1380px] grid-cols-2 gap-4 md:grid-cols-6">
             {proofMarks.map((mark) => (
               <a
                 key={mark}
                 href="#solutions"
-                className="text-lg font-semibold tracking-[0.12em] text-white/28 transition hover:text-[#d6c08c]"
+                className="group flex min-h-16 items-center justify-center gap-3 rounded-full border border-white/[0.055] bg-black/20 px-4 text-sm font-semibold tracking-[0.12em] text-white/36 backdrop-blur-sm transition hover:border-[#d6c08c]/30 hover:text-[#d6c08c]"
               >
+                <span className="hidden h-5 w-5 items-center justify-center rounded border border-white/15 text-[10px] text-white/30 transition group-hover:border-[#d6c08c]/40 group-hover:text-[#d6c08c] xl:flex">
+                  {mark.slice(0, 1)}
+                </span>
                 {mark}
               </a>
             ))}
@@ -123,8 +122,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="solutions" className="relative z-10 mx-auto max-w-[1620px] px-8 py-28 sm:px-12 lg:px-16">
-        <div className="mb-16 grid gap-12 lg:grid-cols-2 lg:items-end">
+      <section id="solutions" className="relative z-10 px-[clamp(2rem,4.8vw,5.75rem)] py-28">
+        <div className="mx-auto mb-16 grid max-w-[1620px] gap-12 lg:grid-cols-2 lg:items-end">
           <div>
             <p className="mb-7 text-xs font-semibold tracking-[0.35em] text-neutral-500">WHAT WE DO</p>
             <h2 className="text-4xl font-bold leading-tight tracking-[-0.055em] sm:text-5xl lg:text-6xl">
@@ -138,7 +137,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid gap-6 lg:grid-cols-4">
+        <div className="mx-auto grid max-w-[1620px] gap-6 lg:grid-cols-4">
           {cards.map(({ title, body, icon: Icon }) => (
             <motion.div
               key={title}
@@ -156,8 +155,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="about" className="relative z-10 mx-auto max-w-[1620px] px-8 pb-24 sm:px-12 lg:px-16">
-        <div className="grid gap-6 lg:grid-cols-3">
+      <section id="about" className="relative z-10 px-[clamp(2rem,4.8vw,5.75rem)] pb-24">
+        <div className="mx-auto grid max-w-[1620px] gap-6 lg:grid-cols-3">
           {[
             ["01", "Map the leaks", "Find repeated decisions, stale reports, invisible bottlenecks, and expensive handoffs."],
             ["02", "Build the system", "Ship the smallest useful automation or console first, then tighten it with real operator feedback."],
@@ -172,8 +171,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className="relative z-10 mx-auto max-w-[1620px] px-8 pb-16 sm:px-12 lg:px-16">
-        <div className="relative overflow-hidden rounded-xl border border-white/15 bg-white/[0.035] p-10 md:p-16">
+      <section id="contact" className="relative z-10 px-[clamp(2rem,4.8vw,5.75rem)] pb-16">
+        <div className="relative mx-auto max-w-[1620px] overflow-hidden rounded-xl border border-white/15 bg-white/[0.035] p-10 md:p-16">
           <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 opacity-[0.16] topo-lines" />
           <div className="relative grid gap-10 md:grid-cols-[1fr_auto] md:items-center">
             <div className="md:ml-[42%]">
@@ -188,7 +187,8 @@ export default function Home() {
 
             <a
               href="mailto:tony@ascendai.one?subject=Ascend%20AI%20Call"
-              className="inline-flex items-center justify-center gap-6 rounded bg-white px-9 py-5 text-base font-semibold tracking-[0.08em] text-black transition hover:bg-[#d6c08c]"
+              className="inline-flex items-center justify-center gap-6 rounded bg-white px-9 py-5 text-base font-extrabold tracking-[0.08em] !text-[#050505] transition hover:bg-[#d6c08c]"
+              style={{ color: "#050505" }}
             >
               BOOK A CALL <ArrowRight size={22} />
             </a>
@@ -196,7 +196,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="relative z-10 mx-auto grid max-w-[1620px] gap-10 px-8 pb-12 sm:px-12 md:grid-cols-3 lg:px-16">
+      <footer className="relative z-10 mx-auto grid max-w-[1620px] gap-10 px-[clamp(2rem,4.8vw,5.75rem)] pb-12 md:grid-cols-3">
         <div>
           <p className="text-2xl font-semibold tracking-[0.28em]">
             ASCEND <span className="text-neutral-400">AI</span>
