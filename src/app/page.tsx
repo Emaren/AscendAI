@@ -83,9 +83,9 @@ export default function Home() {
                 <br />
                 INTELLIGENCE
                 <br />
-                <span className="text-[#bfb39a]">FOR MODERN</span>
+                <span className="text-[#b8aa92]">FOR MODERN</span>
                 <br />
-                <span className="text-[#bfb39a]">BUSINESS.</span>
+                <span className="text-[#b8aa92]">BUSINESS.</span>
               </h1>
 
               <p className="mt-11 max-w-[470px] text-[1rem] leading-[2] text-neutral-300 sm:text-[1.04rem] sm:leading-[2.05]">
