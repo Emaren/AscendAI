@@ -49,13 +49,18 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
+.site-shell {
+  width: min(1760px, calc(100% - 28px));
+  margin: 0 auto;
+}
+
 .hero-pyramid-scene {
   background-image: url("/ascend-pyramid-hero.png");
   background-repeat: no-repeat;
-  background-size: auto 100%;
-  background-position: right -3vw center;
-  filter: contrast(1.1) brightness(0.94) saturate(0.88);
-  transform: scale(1.015);
+  background-size: auto 90%;
+  background-position: right -7vw center;
+  filter: contrast(1.08) brightness(0.93) saturate(0.88);
+  transform: scale(0.965);
   transform-origin: right center;
 }
 
@@ -68,25 +73,43 @@ a {
     radial-gradient(ellipse at 52% 72%, transparent 0 48%, rgba(255, 255, 255, 0.18) 48.3% 48.7%, transparent 49.1%);
 }
 
+@media (min-width: 1024px) {
+  .site-shell {
+    width: min(1760px, calc(100% - 44px));
+  }
+}
+
+@media (min-width: 1440px) {
+  .site-shell {
+    width: min(1760px, calc(100% - 72px));
+  }
+}
+
 @media (max-width: 1280px) {
   .hero-pyramid-scene {
-    background-size: auto 92%;
-    background-position: right -9vw center;
+    background-size: auto 86%;
+    background-position: right -11vw center;
   }
 }
 
 @media (max-width: 1023px) {
+  .site-shell {
+    width: min(100%, calc(100% - 20px));
+  }
+
   .hero-pyramid-scene {
-    background-size: auto 82%;
-    background-position: right -22vw top 32%;
+    background-size: auto 78%;
+    background-position: right -24vw top 32%;
     opacity: 0.58;
+    transform: scale(0.98);
   }
 }
 
 @media (max-width: 640px) {
   .hero-pyramid-scene {
-    background-size: auto 62%;
-    background-position: right -26% top 15%;
+    background-size: auto 60%;
+    background-position: right -30% top 15%;
     opacity: 0.42;
+    transform: scale(1);
   }
 }
