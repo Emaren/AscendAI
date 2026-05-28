@@ -71,21 +71,21 @@ export default function Home() {
             </a>
           </header>
 
-          <div className="relative z-10 px-[clamp(1.5rem,3vw,4rem)] pt-24 sm:pt-28 lg:pt-36 xl:pt-40">
+          <div className="relative z-10 px-[clamp(2.25rem,4.8vw,6rem)] pt-24 sm:pt-28 lg:pt-36 xl:pt-40">
             <motion.div
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.75, ease: "easeOut" }}
-              className="max-w-[560px]"
+              className="max-w-[535px]"
             >
-              <h1 className="text-[2.95rem] font-bold leading-[1.06] tracking-[-0.038em] text-white/94 sm:text-[4rem] lg:text-[4.45rem] xl:text-[4.85rem] 2xl:text-[5.15rem]">
+              <h1 className="text-[2.72rem] font-semibold leading-[1.15] tracking-[-0.022em] text-[#e3ded2] sm:text-[3.55rem] lg:text-[3.95rem] xl:text-[4.28rem] 2xl:text-[4.55rem]">
                 OPERATIONAL
                 <br />
                 INTELLIGENCE
                 <br />
-                <span className="text-[#b8aa92]">FOR MODERN</span>
+                <span className="text-[#bfb39a]">FOR MODERN</span>
                 <br />
-                <span className="text-[#b8aa92]">BUSINESS.</span>
+                <span className="text-[#bfb39a]">BUSINESS.</span>
               </h1>
 
               <p className="mt-11 max-w-[470px] text-[1rem] leading-[2] text-neutral-300 sm:text-[1.04rem] sm:leading-[2.05]">
@@ -95,14 +95,13 @@ export default function Home() {
               <div className="mt-14 flex flex-col gap-4 sm:flex-row">
                 <a
                   href="#contact"
-                  className="inline-flex items-center justify-center gap-5 rounded bg-white px-8 py-5 text-base font-extrabold tracking-[0.08em] !text-[#050505] shadow-[0_0_34px_rgba(255,255,255,0.12)] transition hover:bg-[#d6c08c]"
-                  style={{ color: "#050505" }}
+                  className="inline-flex items-center justify-center gap-5 rounded border border-[#d6c08c]/40 bg-[#12100b]/80 px-8 py-5 text-base font-extrabold tracking-[0.08em] text-[#eadfca] shadow-[0_0_34px_rgba(214,192,140,0.08),inset_0_1px_0_rgba(255,255,255,0.08)] backdrop-blur transition hover:border-[#d6c08c] hover:bg-[#d6c08c] hover:text-black"
                 >
                   BOOK A CALL <ArrowRight size={21} />
                 </a>
                 <a
                   href="#solutions"
-                  className="inline-flex items-center justify-center gap-5 rounded border border-white/40 px-8 py-5 text-base font-semibold tracking-[0.08em] transition hover:border-white hover:bg-white/[0.07]"
+                  className="inline-flex items-center justify-center gap-5 rounded border border-white/20 bg-black/25 px-8 py-5 text-base font-semibold tracking-[0.08em] text-[#ddd6c9] transition hover:border-[#d6c08c]/55 hover:bg-[#d6c08c]/10 hover:text-[#f2e7cf]"
                 >
                   OUR SOLUTIONS <ArrowRight size={21} />
                 </a>
