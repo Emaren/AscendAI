@@ -73,24 +73,42 @@ export default function Home() {
 
           <div className="relative z-10 px-[clamp(2.25rem,4.8vw,6rem)] pt-24 sm:pt-28 lg:pt-36 xl:pt-40">
             <motion.div
-              initial={{ opacity: 0, y: 18 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.75, ease: "easeOut" }}
-              className="max-w-[535px]"
+              initial={{ opacity: 1 }}
+              animate={{ opacity: 1 }}
+              className="max-w-[610px]"
             >
-              <h1 className="text-[2.72rem] font-semibold leading-[1.15] tracking-[-0.022em] text-[#f4f1ea] sm:text-[3.55rem] lg:text-[3.95rem] xl:text-[4.28rem] 2xl:text-[4.55rem]">
-                OPERATIONAL
-                <br />
-                INTELLIGENCE
-                <br />
-                <span className="text-[#c9bea5]">FOR MODERN</span>
-                <br />
-                <span className="text-[#c9bea5]">BUSINESS.</span>
+              <p className="mb-7 text-xs font-semibold uppercase tracking-[0.38em] text-[#bfb39a]/75">
+                Private systems · Operator intelligence
+              </p>
+
+              <h1 className="text-[3.05rem] font-medium leading-[1.08] tracking-[-0.045em] text-[#f2efe8] sm:text-[4.05rem] lg:text-[4.45rem] xl:text-[4.82rem] 2xl:text-[5.15rem]">
+                <motion.span
+                  initial={{ opacity: 0, y: 16, filter: "blur(8px)" }}
+                  animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                  transition={{ duration: 0.75, ease: "easeOut", delay: 0.05 }}
+                  className="block"
+                >
+                  Operational intelligence
+                </motion.span>
+
+                <motion.span
+                  initial={{ opacity: 0, y: 16, filter: "blur(8px)" }}
+                  animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                  transition={{ duration: 0.75, ease: "easeOut", delay: 0.22 }}
+                  className="block text-[#c9bea5]"
+                >
+                  for modern business.
+                </motion.span>
               </h1>
 
-              <p className="mt-11 max-w-[470px] text-[1rem] leading-[2] text-neutral-300 sm:text-[1.04rem] sm:leading-[2.05]">
+              <motion.p
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.65, ease: "easeOut", delay: 0.42 }}
+                className="mt-10 max-w-[500px] text-[1rem] leading-[2.05] text-neutral-300 sm:text-[1.04rem] sm:leading-[2.1]"
+              >
                 Ascend AI builds systems that tighten operations, automate repetitive work, and surface hidden leverage inside your business.
-              </p>
+              </motion.p>
 
               <div className="mt-14 flex flex-col gap-4 sm:flex-row">
                 <a
