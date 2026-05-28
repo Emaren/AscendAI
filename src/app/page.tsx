@@ -78,14 +78,14 @@ export default function Home() {
               transition={{ duration: 0.75, ease: "easeOut" }}
               className="max-w-[535px]"
             >
-              <h1 className="text-[2.72rem] font-semibold leading-[1.15] tracking-[-0.022em] text-[#e3ded2] sm:text-[3.55rem] lg:text-[3.95rem] xl:text-[4.28rem] 2xl:text-[4.55rem]">
+              <h1 className="text-[2.72rem] font-semibold leading-[1.15] tracking-[-0.022em] text-[#f4f1ea] sm:text-[3.55rem] lg:text-[3.95rem] xl:text-[4.28rem] 2xl:text-[4.55rem]">
                 OPERATIONAL
                 <br />
                 INTELLIGENCE
                 <br />
-                <span className="text-[#b8aa92]">FOR MODERN</span>
+                <span className="text-[#c9bea5]">FOR MODERN</span>
                 <br />
-                <span className="text-[#b8aa92]">BUSINESS.</span>
+                <span className="text-[#c9bea5]">BUSINESS.</span>
               </h1>
 
               <p className="mt-11 max-w-[470px] text-[1rem] leading-[2] text-neutral-300 sm:text-[1.04rem] sm:leading-[2.05]">
