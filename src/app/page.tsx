@@ -76,9 +76,9 @@ export default function Home() {
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.75, ease: "easeOut" }}
-              className="max-w-[620px]"
+              className="max-w-[560px]"
             >
-              <h1 className="text-[3.2rem] font-bold leading-[1.01] tracking-[-0.05em] sm:text-[4.45rem] lg:text-[4.95rem] xl:text-[5.35rem] 2xl:text-[5.7rem]">
+              <h1 className="text-[2.95rem] font-bold leading-[1.06] tracking-[-0.038em] text-white/94 sm:text-[4rem] lg:text-[4.45rem] xl:text-[4.85rem] 2xl:text-[5.15rem]">
                 OPERATIONAL
                 <br />
                 INTELLIGENCE
@@ -88,11 +88,11 @@ export default function Home() {
                 <span className="text-[#b8aa92]">BUSINESS.</span>
               </h1>
 
-              <p className="mt-10 max-w-[500px] text-[1.02rem] leading-[2.05] text-neutral-200 sm:text-[1.08rem] sm:leading-[2.1]">
+              <p className="mt-11 max-w-[470px] text-[1rem] leading-[2] text-neutral-300 sm:text-[1.04rem] sm:leading-[2.05]">
                 Ascend AI builds systems that tighten operations, automate repetitive work, and surface hidden leverage inside your business.
               </p>
 
-              <div className="mt-12 flex flex-col gap-4 sm:flex-row">
+              <div className="mt-14 flex flex-col gap-4 sm:flex-row">
                 <a
                   href="#contact"
                   className="inline-flex items-center justify-center gap-5 rounded bg-white px-8 py-5 text-base font-extrabold tracking-[0.08em] !text-[#050505] shadow-[0_0_34px_rgba(255,255,255,0.12)] transition hover:bg-[#d6c08c]"
