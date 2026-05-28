@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <main className="min-h-screen overflow-hidden bg-black text-white">
       <div className="site-shell">
-        <section className="relative min-h-[840px] overflow-hidden border-x border-b border-white/10 lg:min-h-[940px] xl:min-h-[980px]">
+        <section className="relative min-h-[780px] overflow-hidden border-x border-b border-white/10 lg:min-h-[860px] xl:min-h-[900px]">
           <div className="absolute inset-0">
             <div
               className="absolute inset-0 hero-pyramid-scene"
@@ -78,7 +78,7 @@ export default function Home() {
               transition={{ duration: 0.75, ease: "easeOut" }}
               className="max-w-[660px]"
             >
-              <h1 className="text-[3.7rem] font-bold leading-[0.93] tracking-[-0.066em] sm:text-[5.2rem] lg:text-[6rem] xl:text-[6.6rem] 2xl:text-[7rem]">
+              <h1 className="text-[3.45rem] font-bold leading-[0.94] tracking-[-0.062em] sm:text-[4.75rem] lg:text-[5.35rem] xl:text-[5.85rem] 2xl:text-[6.25rem]">
                 OPERATIONAL
                 <br />
                 INTELLIGENCE

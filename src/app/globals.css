@@ -50,17 +50,17 @@ a {
 }
 
 .site-shell {
-  width: min(1760px, calc(100% - 28px));
+  width: min(1640px, calc(100% - 36px));
   margin: 0 auto;
 }
 
 .hero-pyramid-scene {
   background-image: url("/ascend-pyramid-hero.png");
   background-repeat: no-repeat;
-  background-size: auto 90%;
-  background-position: right -7vw center;
-  filter: contrast(1.08) brightness(0.93) saturate(0.88);
-  transform: scale(0.965);
+  background-size: auto 76%;
+  background-position: right 1.5vw center;
+  filter: contrast(1.08) brightness(0.94) saturate(0.9);
+  transform: none;
   transform-origin: right center;
 }
 
@@ -75,20 +75,20 @@ a {
 
 @media (min-width: 1024px) {
   .site-shell {
-    width: min(1760px, calc(100% - 44px));
+    width: min(1640px, calc(100% - 56px));
   }
 }
 
 @media (min-width: 1440px) {
   .site-shell {
-    width: min(1760px, calc(100% - 72px));
+    width: min(1640px, calc(100% - 88px));
   }
 }
 
 @media (max-width: 1280px) {
   .hero-pyramid-scene {
-    background-size: auto 86%;
-    background-position: right -11vw center;
+    background-size: auto 72%;
+    background-position: right -2vw center;
   }
 }
 
@@ -98,18 +98,16 @@ a {
   }
 
   .hero-pyramid-scene {
-    background-size: auto 78%;
+    background-size: auto 72%;
     background-position: right -24vw top 32%;
     opacity: 0.58;
-    transform: scale(0.98);
   }
 }
 
 @media (max-width: 640px) {
   .hero-pyramid-scene {
-    background-size: auto 60%;
-    background-position: right -30% top 15%;
+    background-size: auto 58%;
+    background-position: right -32% top 15%;
     opacity: 0.42;
-    transform: scale(1);
   }
 }
